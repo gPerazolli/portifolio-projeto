@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --cor-terciaria: #0E46A3;
+    --cor-primaria: #9AC8CD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: #1E0342;
+    color: var(--cor-primaria);
+    font-family: "Montserrat";
+}
+
+h1{
+    font-family: "Krona One";
+    font-size: 2.25rem;
+}
+
+h2{
+    font-family: "Krona One";
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+p, a{
+    font-size: 1.5rem;
+}
+
+.header{
+    padding: 0 8%;
+    margin-top: 5%;
+}
+
+.navbar{
+    display:flex;
+    justify-content: flex-start;
+    gap: 80px;
+}
+
+.header a:hover{
+    scale: 1.05;
+}
+
+.header a{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container{
+    padding: 8%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.container-conteudo{
+    width: 50%;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    
+}
+
+.container-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    padding: 16px 0;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 600;
+}
+
+.button:hover{
+    background-color: #0E46A3;
+    scale: 1.05;
+}
+
+.imagem{
+    width: 50%;
+}
+
+footer{
+    background-color: var(--cor-terciaria);
+    color: #000;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 24px 0;
+}
+
+@media (max-width: 1200px){
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container-conteudo{
+        width: auto;
+    }
+}
+
