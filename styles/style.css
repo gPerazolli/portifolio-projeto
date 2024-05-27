@@ -128,5 +128,9 @@ footer{
     .container-conteudo{
         width: auto;
     }
+
+    .imagem{
+        width: 70%;
+    }
 }
 
